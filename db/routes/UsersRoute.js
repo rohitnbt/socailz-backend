@@ -88,6 +88,7 @@ router.post("/login", async (request, response) => {
 // })
 
 router.patch("/upload/:userId", async (request, response) => {
+  console.log(request.params.userId);
   try {
     const userId = request.params.userId;
     const userInfo = await UserInfo.findOneAndUpdate(
