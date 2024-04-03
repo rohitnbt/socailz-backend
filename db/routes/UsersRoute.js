@@ -94,7 +94,7 @@ router.patch("/upload/:userId", async (request, response) => {
       { userId: userId },
       {
         profilePicture: profilePicture[0].path,
-        profileBanner: bannerImage[0].path,
+        profileBanner: profileBanner[0].path,
       },
       { new: true },
     );
