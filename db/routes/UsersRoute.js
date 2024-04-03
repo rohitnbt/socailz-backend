@@ -74,19 +74,6 @@ router.post("/login", async (request, response) => {
   }
 });
 
-// Upload
-// router.post('/upload', async(request,response)=> {
-//     try {
-//         const userInfo =  await UserInfo.create({profileBanner: request.file.filename})
-//         console.warn(request.file);
-//         response.status(201).json(UserInfo);
-
-//     } catch (error) {
-//         console.log(error.message);
-//         response.status(500).send({message: error.message})
-//     }
-// })
-
 router.patch("/upload/:userId", async (request, response) => {
   console.log(request.params.userId);
   try {
