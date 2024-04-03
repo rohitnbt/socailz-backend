@@ -98,7 +98,7 @@ router.patch("/upload/:userId", async (request, response) => {
       },
       { new: true },
     );
-    console.warn(request.file);
+    console.warn(request.files);
     response.status(201).json(userInfo);
   } catch (error) {
     response.status(500).send("wrong id!");
