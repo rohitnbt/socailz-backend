@@ -35,7 +35,7 @@ app.use(
   "/",
   upload.fields([
     { name: "profilePicture", maxCount: 1 },
-    { name: "bannerImage", maxCount: 1 },
+    { name: "profileBanner", maxCount: 1 },
   ]),
   UserRoute,
 );
